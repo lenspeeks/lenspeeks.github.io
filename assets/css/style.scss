@@ -3,20 +3,8 @@
 * {
     font-family: Jost;
     margin: 1rem;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-
-    img {
-        width: 70px;
-    }
-}
-
-.construction {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    padding: 0;
+    text-decoration: none;
+    background-image: url("/assets/images/grupp.jpg");
+    background-repeat: no-repeat;
 }
