@@ -18,4 +18,8 @@
   border-style: outset;
   text-decoration: none;
   color: white;
+}
+.buttons a:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
