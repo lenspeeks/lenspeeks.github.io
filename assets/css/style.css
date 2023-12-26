@@ -1,25 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  padding: none;
-  margin: none;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
 }
 
-.buttons {
+/*body {
+    margin: 5rem;
+}*/
+header {
   display: flex;
-  justify-content: center;
-  gap: 10rem;
-  margin-top: 25%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5rem;
 }
-.buttons a {
-  padding: 2rem;
-  background-color: rgb(201, 201, 201);
-  border-color: rgb(82, 82, 82);
-  border-radius: 15px;
-  border-style: outset;
+header .socials {
+  display: flex;
+  gap: 5rem;
+}
+header a {
   text-decoration: none;
+}
+
+.portfolio {
+  margin: 5rem;
+}
+.portfolio .content {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 2rem;
+}
+.portfolio .content .box {
+  border-style: double;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 0.4s ease;
+}
+.portfolio .content .box img {
+  max-width: 550px;
+  border-radius: 15px;
+}
+.portfolio .content .box p {
+  padding: 1rem;
   color: white;
 }
-.buttons a:hover {
+.portfolio .content .box :hover {
   transform: scale(1.05);
-  transition: 0.3s;
+  transition: 0.4s ease;
 }/*# sourceMappingURL=style.css.map */
