@@ -1,60 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
-    background-color: black;
     color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Jost', sans-serif;
 }
 
-/*body {
-    margin: 5rem;
-}*/
+body {
+    background-image: url("/assets/images/nti.JPG");
+    background-size: cover;
+    background-position: center 0% 0% center;
+    background-repeat: repeat repeat no-repeat;
+    background-attachment: fixed;
+}
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 5rem;
-    .socials {
-        display: flex;
-        gap: 5rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    p {
+        font-size: .9rem;
+        font-weight: 400;
+        letter-spacing: .35rem;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 5.5rem;
+        letter-spacing: .325rem;
     }
     a {
         text-decoration: none;
     }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
-.portfolio {
-    margin: 5rem;
-    .content {
+.about {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    gap: 1rem;
+    margin: 12rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 2;
+        font-size: 2rem;
+    }
+}
+
+.contact {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 2;
+        font-size: 2rem;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    .socials {
         display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5rem;
-        padding-top: 2rem;
-        .box {
-            border-style: double;
-            border-radius: 15px;
-            border-color: white;
-            border-width: 5px;
-            width: fit-content;
-            height: fit-content;
-            transition: .4s ease;
-            img {
-                max-width: 550px;
-                border-radius: 15px;
-            }
-            p {
-                padding: 1rem;
-                color: white;
-            }
-            :hover {
-                transform: scale(1.05);
-                transition: .4s ease;
-            }
-        }
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        margin: none;
+    }
+    .contact {
+        margin: none;
     }
 }
